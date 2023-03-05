@@ -106,7 +106,7 @@ const userController = {
                 return Thought.deleteMany({_id: {$in: userData.thoughts}});
             })
             .then(() => {
-                res.status(200).json({message: `Deleted user ${this.username}!`});
+                res.status(200).json({message: `Deleted user!`});
             })
             .catch((err) => {
                 console.log(err);

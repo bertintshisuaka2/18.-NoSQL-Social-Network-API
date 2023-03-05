@@ -43,7 +43,7 @@ const thoughtSchema = new Schema(
             required: true,
             maxlength: 280
         },
-        createdAt: {
+        createdAt: { 
             type: Date,
             default: Date.now,
             //getter to format timestamp
@@ -54,7 +54,7 @@ const thoughtSchema = new Schema(
             required: true
         },
         reactions: [reactionSchema]
-    }
+    } 
 );
 
 //virtual for thought
